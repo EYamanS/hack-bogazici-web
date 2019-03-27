@@ -1,7 +1,7 @@
 /* Simple CSS Reset - START */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 *, *:before, *:after {
@@ -14,6 +14,11 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -22,141 +27,186 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* Simple CSS Reset - END */
-section{
-  background-image: linear-gradient(90deg, rgba(18, 41, 93, 1) 0%, #000000 100%); /* main bg color */ 
-  color: white;
-  padding: 10px;
+
+a {
+  text-decoration: none;
 }
-body{
-  font-family: 'PT Mono', monospace;
-}
+
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-nav{
+/* Simple CSS Reset - END */
+
+body {
+  font-family: 'Roboto', monospace;
+  font-weight: 100;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  line-height: 2rem;
+}
+
+p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+section {
+  background-image: linear-gradient(90deg, rgba(18, 41, 93, 1) 0%, #000000 100%); /* main bg color */ 
+  padding: 10px;
+}
+
+section .light {
+  color: #333333;
+  background: #ffffff;
+}
+
+nav {
   display: none;
 }
-.btn{
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid white;
-  display: inline;
-  padding: 12px 24px;
-  font-size: 1.2em;
+
+.hero-btn {
+  background-color: #183661;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
-.btn a{
+
+.hero-btn a {
   text-decoration: none;
-  color: white;
-  letter-spacing: 2px;
+  color: #ffffff;
 }
-#c{
+
+#c {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
-section h2{
+
+section h2 {
   letter-spacing: 2px;
 }
-section p{
-  line-height: 1.2em;
-}
-header{
+
+header {
   width: 100%;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   min-height: 450px;
-  color: white;
+  max-width: 1300px;
+  color: #333333;
+  background: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 50px;
 }
-.header-content{
+.header-content {
   position: relative;
   text-align: center;
 }
-.header-logo{
+
+.header-logo {
   width: 60%;
   margin-top: 30px;
 }
-.header-logo img{
-  width: 100%;
+
+.header-detail-text {
+  margin: 40px 0;
+  font-size: 1.2rem;
 }
-.header-detail-text{
-  padding: 20px 20px;
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 1.2em;
-  margin-bottom: 40px;
-}
-.header-image{
+
+.header-image {
   display: none;
 }
-.hero-title{
+
+.hero-title {
   display: none;
 }
-.why-container h3{
+
+.why-container h3 {
   text-decoration: underline;
 }
-.why-list{
+
+.why-list {
   list-style: none;
   padding-left: 10px;
   line-height: 1.4em;
 }
-.why-list li{
+
+.why-list li {
   padding: 4px 0;
 }
-.why-list li:before{
+
+.why-list li:before {
   font-size: 1.4em;
   content: '✓';
   padding: 0 2px;
 }
-.program-container{
+
+.program-container {
   box-sizing: border-box;
   padding: 4px;
   border-radius: 15px;
   border: 4px solid #E2FFFA;
   margin: 16px 0;
 }
-.program-container .program-day{
+
+.program-container .program-day {
   text-align: center;
 }
-.program-item{
+
+.program-item {
   display: flex;
   align-items: center;
   margin: 12px 0;
 }
-.program-item .time{
+
+.program-item .time {
   width: 8%;
   font-size: 0.8em;
   text-align: center;
   font-weight: bold;
 }
-.program-item .time hr{
+
+.program-item .time hr {
   display: inline-block;
   width: 40%;
   border-color: white;
 }
-.program-item .image{
+
+.program-item .image {
   width: 22%;
   text-align: center;
 }
-.program-item .image img{
+
+.program-item .image img {
   width: 100%;
   border-radius: 100%;
   box-sizing: border-box;
   border: 2px solid white;
 }
-.program-item .image.triple img{
+
+.program-item .image.triple img {
   width: 80%;
 }
-.program-item .text{
+
+.program-item .text {
   width: 70%;
   box-sizing: border-box;
   padding: 4px 4px 4px 8px;
 }
-.program-item h3, .program-item h4{
+
+.program-item h3, .program-item h4 {
   margin: 4px 0;
 }
+
 .program-item .item-title{
   font-size: 0.8em;
   font-weight: 700;
@@ -296,10 +346,8 @@ header{
       align-items: center;
       padding-top: 200px;
   }
-  .header-container .header-text{
-      width: 60%;
-      margin: 20px 0;
-      padding: 0 20px;
+  .header-text{
+      padding-right: 50px;
   }
   .header-container .header-image{
       width: 40%;
@@ -334,6 +382,8 @@ header{
   }
   .hero-title{
       display: block;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
   }
   .header-logo{
       display: none;
@@ -344,45 +394,32 @@ header{
   }
   nav{
       width: 100%;
-      background: rgb(15, 164, 221);
+      background: #183661;
       color: white;
       position: fixed;
-      display: block;
-      z-index: 11;
-      border-bottom:1px solid #000;
-  }
-  .menu-container{
-      height: 80px;
-      margin-left: 50%;
-      width: 50%;
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      align-content: center;
+      box-shadow: 0px 0px 3px 1px #183661;
+      justify-content: space-between;
+      padding: 10px;
+      z-index: 11;
   }
-  .menu-container div{
-      width: 16%;
-      box-sizing: border-box;
-      text-align: center;
+  .menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-  .menu-container div a{
-      display: block;
-      padding: 8px 16px;
+  .menu-container a {
+    margin: 0 16px;
   }
   nav a{
       text-decoration: none;
       color: white;
       font-size: 1.1em;
-      font-weight: 700;
-  }
-  nav .logo-container{
-      height: 68px;
-      position: absolute;
-      top: 6px;
-      left: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
   }
   nav .logo-container img{
-      height: 64px;
+      height: 68px;
   }
   .register-container .br-mobile{
       display: none;
