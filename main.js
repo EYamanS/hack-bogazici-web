@@ -33,10 +33,13 @@ window.addEventListener('load', function() {
   function draw() {
     //Black BG for the canvas
     //translucent BG to show trail
-    ctx.fillStyle = 'rgb(18, 41, 93)';
+    ctx.fillStyle = 'rgb(18, 41, 93)';  // background color
+    
     ctx.fillRect(0, 0, c.width, c.height);
 
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = '#ffffff'; // color of those which is dropping
+
+
     ctx.font = font_size + 'px arial';
     //looping over drops
     for(var i = 0; i < drops.length; i++) {
@@ -75,7 +78,7 @@ window.addEventListener('load', function() {
 
   window.addEventListener('resize', resizeCanvas);
 
-  setInterval(draw, 30);
+  setInterval(draw, 10);  // speed of particles
   // Animation END
 
   // SmoothScroll START
