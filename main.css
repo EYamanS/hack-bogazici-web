@@ -422,14 +422,14 @@ header{
     margin: 0;
 }
 #gold {
-    background: url('assets/icons/gold.ico') no-repeat left top;
+    background: url(assets/icons/gold.ico) no-repeat left top;
     padding: 0px 0px 8px 48px;
 }
 #silver {
-    background: url('assets/icons/silver.ico') no-repeat left top;
+    background: url(assets/icons/silver.ico) no-repeat left top;
     padding: 0px 0px 8px 48px;
 }
 #bronze {
-    background: url('assets/icons/bronze.ico') no-repeat left top;
+    background: url(assets/icons/bronze.ico) no-repeat left top;
     padding: 0px 0px 8px 48px;
 }
