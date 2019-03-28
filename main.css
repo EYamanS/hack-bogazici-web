@@ -415,6 +415,7 @@ header{
 #prizesheader {
     font-size: 48px;
     margin: 18px;
+    padding-left: 28px;
 }
 #prizeslist {
     list-style-type: none;
