@@ -402,14 +402,12 @@ header {
       justify-content: space-between;
       padding: 10px;
       z-index: 11;
+      align-items: center
   }
   .menu-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  .menu-container a {
-    margin: 0 16px;
   }
   nav a{
       text-decoration: none;
@@ -417,8 +415,13 @@ header {
       font-size: 1.1em;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
+      margin: 0 16px;
   }
-  nav .logo-container img{
+  nav a.logo {
+    display: flex;
+    align-items: center;
+  }
+  nav img {
       height: 68px;
   }
   .register-container .br-mobile{
