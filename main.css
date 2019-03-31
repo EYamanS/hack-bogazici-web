@@ -70,6 +70,10 @@ section .container {
   margin: 0 auto;
 }
 
+section .container-column {
+  flex-direction: column;
+}
+
 section h2 {
   margin-bottom: 20px;
 }
@@ -142,10 +146,6 @@ section h2 {
   font-size: 1.4rem;
   content: '✓';
   margin-right: 10px;
-}
-
-#program .program-container {
-  flex-direction: column;
 }
 
 #c {
@@ -278,6 +278,10 @@ section h2 {
 
   #hero .header-text{
     padding-right: 50px;
+  }
+
+  #about .container {
+    flex-direction: row;
   }
 }
 
