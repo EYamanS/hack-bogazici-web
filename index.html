@@ -11,7 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="nav.css">
-  <title>Boğaziçi DataCamp</title>
+  <link rel="stylesheet" href="bootstrap-table.css">
+  <title>Hack Bogazici</title>
 </head>
 <body>
   <header class="main">
@@ -31,39 +32,41 @@
   </header>
 
   <section id="hero" class="light">
-    <div class="header-text">
-      <h1 class="hero-title">HACK BOĞAZİÇİ</h1>
-      <div class="header-detail-text">
-        <p>You are invited to Boğaziçi DataCamp organized by Boğaziçi University IT Club Compec for the first time this year.</p>
-        <p>During the two-day summit, with talks, you will recognize the business applications of data science with a technical approach and practice them in workshops.</p>
+    <div class="container">
+      <div class="header-text">
+        <h1 class="hero-title">HACK BOĞAZİÇİ</h1>
+        <div class="header-detail-text">
+          <p>You are invited to Boğaziçi DataCamp organized by Boğaziçi University IT Club Compec for the first time this year.</p>
+          <p>During the two-day summit, with talks, you will recognize the business applications of data science with a technical approach and practice them in workshops.</p>
+        </div>
+        <button class="hero-btn">
+          <a data-scroll href="#register">Get Your Ticket Free</a>
+        </button>
       </div>
-      <button class="hero-btn">
-        <a data-scroll href="#register">Get Your Ticket Free</a>
-      </button>
-    </div>
-    <div class="header-image">
-      <img src="07.png">
+      <div class="header-image">
+        <img src="07.png">
+      </div>
     </div>
   </section>
 
   <section id="about">
     <div class="container">
-      <div class="why-container">
-        <h2>What</h2>
+      <div>
+        <h2>What is it?</h2>
         <p>Boğaziçi DataCamp is a two-day summit at which the field of data science with its business applications is discussed via talks and workshops are held where attenders can learn by practicing. It will be organized for the first time by Boğaziçi University IT Club Compec this year.</p>
-        <h3>Place</h3>
+        <h2>Place</h2>
         <p>
           Boğaziçi University <br>
           New Hall 105 <br>
           BM B4 (For workshops)
         </p>
-        <h3>Time</h3>
+        <h2>Time</h2>
         <p>17-18 November</p>
       </div>
-      <div class="why-container">
+      <div>
         <h2>For Whom</h2>
         <p>Boğaziçi DataCamp is designed for you, if</p>
-        <ul class="why-list">
+        <ul>
           <li>You are a student from the departments like Computer Engineering, Management & Information Systems in which programing concepts and algorithmic approaches are covered, (if you are a professional, still welcome)</li>
           <li>You desire to make use of "data science" in your projects and career path,</li>
           <li>You are curious what "data science" implies with the related terms Machine Learning, Artificial Intelligence, Image Recognition, etc.</li>
@@ -73,206 +76,67 @@
   </section>
 
   <section id="program" class="light">
-    <div class="container container-wide">
+    <div class="container program-container">
       <h2>Program</h2>
-      <div class="programs-container">
-        <div class="program-container">
-          <h3 class="program-day">Saturday</h3>
-          <div class="program-item">
-            <div class="time">
-                            <div>
-                                12<br>
-                                00
-                            </div>
-                            <hr>
-                            <div>
-                                13<br>
-                                00
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/register.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Registration</h3>
-                        </div>
-                    </div>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                13<br>
-                                00
-                            </div>
-                            <hr>
-                            <div>
-                                13<br>
-                                15
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/speaker.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Event Introduction</h3>
-                        </div>
-                    </div>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                18<br>
-                                00
-                            </div>
-                            <hr>
-                            <div>
-                                19<br>
-                                00
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/yemek.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Dinner</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="program-container">
-                    <h3 class="program-day">Sunday</h3>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                00<br>
-                                00
-                            </div>
-                            <hr>
-                            <div>
-                                01<br>
-                                30
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/yemek.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Dinner</h3>
-                        </div>
-                    </div>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                07<br>
-                                30
-                            </div>
-                            <hr>
-                            <div>
-                                09<br>
-                                00
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/kahve.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Breakfast</h3>
-                        </div>
-                    </div>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                13<br>
-                                00
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/register.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Deadline for Submissions</h3>
-                        </div>
-                    </div>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                13<br>
-                                00
-                            </div>
-                            <hr>
-                            <div>
-                                13<br>
-                                30
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/kahve.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Break</h3>
-                        </div>
-                    </div>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                13<br>
-                                30
-                            </div>
-                            <hr>
-                            <div>
-                                15<br>
-                                00
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/speaker.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Team Presentations</h3>
-                        </div>
-                    </div>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                15<br>
-                                00
-                            </div>
-                            <hr>
-                            <div>
-                                15<br>
-                                30
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/casestudy.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Judging</h3>
-                        </div>
-                    </div>
-                    <div class="program-item">
-                        <div class="time">
-                            <div>
-                                15<br>
-                                30
-                            </div>
-                            <hr>
-                            <div>
-                                16<br>
-                                00
-                            </div>
-                        </div>
-                        <div class="image">
-                            <img src="assets/icons/microphone.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3 class="item-title">Prize Giving Ceremony</h3>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Event</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="4" class="center-content">Saturday</td>
+            </tr>
+            <tr>
+              <td>12:00 - 13:00</td>
+              <td>Registration</td>
+            </tr>
+            <tr>
+              <td>13:00 - 13:15</td>
+              <td>Event Introduction</td>
+            </tr>
+            <tr>
+              <td>18:00 - 19:00</td>
+              <td>Dinner</td>
+            </tr>
+            <tr>
+              <td rowspan="8" class="center-content">Sunday</td>
+            </tr>
+            <tr>
+              <td>00:00 - 01:30</td>
+              <td>Dinner</td>
+            </tr>
+            <tr>
+              <td>07:30 - 09:00</td>
+              <td>Breakfast</td>
+            </tr>
+            <tr>
+              <td>13:00</td>
+              <td>Deadline for Submissions</td>
+            </tr>
+            <tr>
+              <td>13:00 - 13:30</td>
+              <td>Break</td>
+            </tr>
+            <tr>
+              <td>13:30 - 15:00</td>
+              <td>Team Presentations</td>
+            </tr>
+            <tr>
+              <td>15:00 - 15:30</td>
+              <td>Judging</td>
+            </tr>
+            <tr>
+              <td>15:30 - 16:00</td>
+              <td>Prize Giving Ceremony</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
   <section id="partners">
     <div class="container">
