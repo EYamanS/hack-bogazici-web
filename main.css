@@ -54,7 +54,7 @@ p {
 
 section {
   background-color: rgba(18, 41, 93, 1);
-  padding: 100px 30px;
+  padding: 50px 30px;
 }
 
 section.light {
@@ -76,6 +76,16 @@ section .container-column {
 
 section h2 {
   margin-bottom: 20px;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
  
 #hero {
@@ -161,15 +171,16 @@ section h2 {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
-  outline: 20px double black;
+  outline: 15px double white;
   margin: 50px 20px;
 }
 .partners-container .sponsor img{
   width: 100%;
 }
 .partners-container .sponsor.main{
-  width: 50%;
-  margin: 20px auto;
+
+  margin: auto;
+
 }
 .partners-container .sponsor.gold{
   width: 75%;
@@ -191,7 +202,16 @@ section h2 {
 .partners-container .cooperators2 .sponsor{
   width: 18%;
 }
-.register-container h3{
+
+.register-container{
+  color: black;
+
+  text-align: center;
+  box-sizing: border-box;
+  margin: 50px 20px;
+  width: 100%
+}
+/* .register-container h3{
   text-align: center;
   line-height: 1.5em;
   letter-spacing: 1px;
@@ -222,11 +242,22 @@ section h2 {
   color: rgb(255,255,255);
   font-weight: 700;
   font-size: 1.6em;
+} */
+
+#register{
+  padding-bottom: 0px;
 }
+
+
 .instagram{
   margin: auto;
   text-align: center;
 }
+
+.team-container.clearfix{
+  padding-bottom: 25px;
+}
+
 .team-member{
   display: flex;
   justify-content: center;
@@ -260,6 +291,7 @@ section h2 {
 }
 .footer-container{
   text-align: center;
+  display: block;
 }
 .footer-container img{
   width: 60%;
@@ -293,9 +325,26 @@ section h2 {
 }
 @media screen and (min-width: 767px){
 
+  section{
+    padding: 100px 30px;
+  }
+
   .partners-container .sponsor.main{
-      width: 40%;
-      margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    margin: 50px 20px;
+  }
+
+  .partners-container .sponsor.aws{
+    width: 300%;
+    padding-top: 25px;
+  }
+  
+  .partners-container .sponsor.insider{
+    width: 200%;
+    padding-top: 60px;
+    padding-right: 10%;
+    padding-left: 10%;
   }
   .partners-container .sponsor.gold{
       width: 65%;
