@@ -1,68 +1,3 @@
-/* window.addEventListener('load', function() {
-  // Animation START
-  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-  let vh = window.innerHeight * 0.01;
-  // Then we set the value in the --vh custom property to the root of the document
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-  // geting canvas by id c
-  var header = document.getElementById('animation').getBoundingClientRect();
-  var c = document.getElementById('c');
-  var ctx = c.getContext('2d');
-
-  c.height = window.innerHeight;
-  c.width = header.width;
-
-  //chinese characters - taken from the unicode charset
-  //var matrix = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%';
-  var matrix = '01';
-  //converting the string into an array of single characters
-  matrix = matrix.split('');
-
-  var font_size = 12;
-  var columns = c.width/font_size; //number of columns for the rain
-  //an array of drops - one per column
-  var drops = [];
-  //x below is the x coordinate
-  //1 = y co-ordinate of the drop(same for every drop initially)
-  for(var x = 0; x < columns; x++) {
-    drops[x] = 1;
-  }
-
-  //drawing the characters
-  function draw() {
-    //Black BG for the canvas
-    //translucent BG to show trail
-    ctx.fillStyle = 'rgb(18, 41, 93)';  // background color
-    
-    ctx.fillRect(0, 0, c.width, c.height);
-
-    ctx.fillStyle = '#ffffff'; // color of those which is dropping
-
-
-    ctx.font = font_size + 'px arial';
-    //looping over drops
-    for(var i = 0; i < drops.length; i++) {
-      //a random chinese character to print
-      var text = matrix[Math.floor(Math.random()*matrix.length)];
-      //x = i*font_size, y = value of drops[i]*font_size
-      ctx.fillText(text, i*font_size, drops[i]*font_size);
-
-      //sending the drop back to the top randomly after it has crossed the screen
-      //adding a randomness to the reset to make the drops scattered on the Y axis
-      if(drops[i]*font_size > c.height && Math.random() > 0.975)
-          drops[i] = 0;
-
-      //incrementing Y coordinate
-      drops[i]++;
-    }
-  }
-
-
-  // setInterval(draw, 10);  // speed of particles
- Animation of 0 1 */
-
-
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('callback - particles.js config loaded');
@@ -82,8 +17,6 @@ window.addEventListener('load', function() {
       }
     };
 
- 
-  // Animation END
     hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
     hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
   }());
