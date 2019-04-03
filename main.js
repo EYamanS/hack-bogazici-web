@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+/* window.addEventListener('load', function() {
   // Animation START
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
   let vh = window.innerHeight * 0.01;
@@ -58,31 +58,39 @@ window.addEventListener('load', function() {
     }
   }
 
-  function resizeCanvas() {
-    if (window.innerWidth < 600) {
-      return;
-    }
-    header = document.getElementById('animation').getBoundingClientRect();
-    //c.height = header.height;
-    c.width = header.width;
-    c.height = window.innerHeight;
-    columns = c.width/font_size; //number of columns for the rain
-    //an array of drops - one per column
-    drops = [];
-    //x below is the x coordinate
-    //1 = y co-ordinate of the drop(same for every drop initially)
-    for(var x = 0; x < columns; x++) {
-      drops[x] = 1;
-    }
-  }
 
-  window.addEventListener('resize', resizeCanvas);
+  // setInterval(draw, 10);  // speed of particles
+ Animation of 0 1 */
 
-  setInterval(draw, 10);  // speed of particles
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+window.addEventListener('load', function() {
+  // Menu START
+  (function() {
+    var hamburger = {
+      navToggle: document.querySelector('.nav-toggle'),
+      nav: document.querySelector('nav'),
+
+      doToggle: function(e) {
+        e.preventDefault();
+        this.navToggle.classList.toggle('expanded');
+        this.nav.classList.toggle('expanded');
+      }
+    };
+
+ 
   // Animation END
+    hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+    hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+  }());
+  // Menu END
 
   // SmoothScroll START
-  var scroll = new SmoothScroll('a.nav-link', {
+  var scroll = new SmoothScroll('[data-scroll]', {
     offset: 80
   });
   // SmoothScroll END
@@ -117,4 +125,27 @@ window.addEventListener('load', function() {
     var nh_marker = new google.maps.Marker({position: nh, map: map, label: 'NH', title: 'New Hall 105'});
   }
   // Google Maps END
+});
+
+const nav = document.getElementById('nav');
+const navItems = document.querySelectorAll('[data-type="navItem"]');
+let isNavOpen = false;
+
+function toggleNav() {
+  if (isNavOpen) {
+    navItems.forEach(a => a.classList.replace('fadeIn', 'fadeOut'));
+    nav.classList.remove('sidenav-open');
+    isNavOpen = false;
+  } else {
+    nav.classList.add('sidenav-open');
+    navItems.forEach(a => a.classList.replace('fadeOut', 'fadeIn'));
+    isNavOpen = true;
+  }
+}
+
+window.addEventListener('click', (e) => {
+  if (isNavOpen && e.target !== nav && e.target.id !== 'navToggle') {
+    toggleNav();
+    e.stopPropagation();
+  }
 });

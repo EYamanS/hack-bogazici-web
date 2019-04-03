@@ -1,99 +1,55 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hack Boğaziçi is one of exciting hackathons in Istanbul.">
-    <link rel="shortcut icon" type="image/png" href="hackbogazicilogo.png"/>
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
-
-    <title>Hack Boğaziçi</title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Boğaziçi DataCamp is a two-day summit, including talks on the business applications of data science and workshops in which you can practice on the related technologies.">
+  <link rel="shortcut icon" type="image/png" href="/assets/logo_icon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="bootstrap-table.css">
+  <script src="particles.js"></script>
+  <title>Hack Bogazici</title>
 </head>
 <body>
-    <nav>
-        <div class="logo-container">
-            <a data-scroll href="#hero" class="nav-link">
-                <img src="hbLongNavBar.png" alt="Hack Boğaziçi">
-            </a>
-        </div>
-        <div class="menu-container">
-            <div>
-                <a data-scroll href="#about" class="nav-link">
-                    About
-                </a>
-            </div>
-            <div><a data-scroll href="#program" class="nav-link">Program</a></div>
-            <div><a data-scroll href="#partners" class="nav-link">Partners</a></div>
-            <div><a data-scroll href="#register" class="nav-link">Register</a></div>
-            <div><a data-scroll href="#contact" class="nav-link">Contact Us</a></div>
-        </div>
-    </nav>
-    <header id="hero">
-        <div class="header-content clearfix" id="animation">
-            <canvas id="c"></canvas>
-            <div class="header-container">
-                <div class="header-text">
-                    <img class="header-logo" src="hbLongNavBar.png" style="filter: invert(100%);">
-                    <h1 class="hero-title">HACK BOĞAZİÇİ</h1>
-                    <div class="header-detail-text">
-                        <p>You are invited to Boğaziçi DataCamp organized by Boğaziçi University IT Club Compec for the first time this year.</p>
-                        <p>During the two-day summit, with talks, you will recognize the business applications of data science with a technical approach and practice them in workshops.</p>
-                    </div>
-                    <div class="btn">
-                        <a data-scroll href="#register" class="nav-link">Get Your Ticket Free</a>
-                    </div>
-                </div>
-                <div class="header-image">
-                    <img src="hackbogazicilogo.png" style="width:100%;">
-                </div>
-            </div>
+  <header class="main">
+    <div class="container">
+      <a data-scroll href="#hero" class="logo">
+        <img src="hbLongNavBar.png" alt="Boğaziçi DataCamp">
+      </a>
+      <span id="navToggle" class="nav-toggle" onclick="toggleNav()">&#9776;</span>
+      <nav id="nav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <a href="#about" data-scroll data-type="navItem" class="animated fast fadeOut active">About</a>
+        <a href="#program" data-scroll data-type="navItem" class="animated fast fadeOut">Program</a>
+        <a href="#partners" data-scroll data-type="navItem" class="animated fast fadeOut">Partners</a>
+        <a href="#register" data-scroll data-type="navItem" class="animated fast fadeOut">Register</a>
+        <a href="#contact" data-scroll data-type="navItem" class="animated fast fadeOut">Contact Us</a>
+      </nav>
+    </div>
+  </header>
 
+  <div id="particles-js" style="position: absolute; z-index: -1;"></div>
+    <section id="hero" class="light" style="background-color: rgba(0, 0, 0, 0);">
+      <div class="container">
+        <div class="header-text">
+          <h1 class="hero-title">HACK BOĞAZİÇİ</h1>
+          <div class="header-detail-text">
+            <p>You are invited to Boğaziçi DataCamp organized by Boğaziçi University IT Club Compec for the first time this year.</p>
+            <p>During the two-day summit, with talks, you will recognize the business applications of data science with a technical approach and practice them in workshops.</p>
+          </div>
+          <button class="hero-btn">
+            <a data-scroll href="#register">Get Your Ticket Free</a>
+          </button>
         </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <div class="why-container">
-                <h2>What</h2>
-                <p>
-                    Boğaziçi DataCamp is a two-day summit at which the field of data
-                    science with its business applications is discussed via talks and workshops are held where
-                    attenders can learn by practicing. It will be organized for the first time by Boğaziçi University IT Club Compec this year.
-                </p>
-                <h3>Place</h3>
-                <p>
-                    Boğaziçi University <br>
-                    New Hall 105 <br>
-                    BM B4 (For workshops)
-                </p>
-                <h3>Time</h3>
-                <p>
-                    17-18 November
-                </p>
-
-            </div>
-            <div class="why-container">
-                <h2>For Whom</h2>
-                <p>Boğaziçi DataCamp is designed for you, if</p>
-                <ul class="why-list">
-                    <li>
-                        You are a student from the departments like Computer Engineering, Management & Information Systems
-                        in which programing concepts and algorithmic approaches are covered,
-                        <br>
-                        (if you are a professional, still welcome)
-                    </li>
-                    <li>
-                        You desire to make use of "data science" in your projects and career path,
-                    </li>
-                    <li>
-                        You are curious what "data science" implies with the related terms Machine Learning, Artificial Intelligence, Image Recognition, etc.
-                    </li>
-                </ul>
-            </div>
+        <div class="header-image">
+          <img src="07.png">
         </div>
-
+      </div>
     </section>
 	
      <section id="program">
@@ -308,61 +264,143 @@
                         </div>
                     </div>
 
-                </div>
-            </div>
+  <section id="about">
+    <div class="container container-column">
+      <div>
+        <h2>What is it?</h2>
+        <p>Boğaziçi DataCamp is a two-day summit at which the field of data science with its business applications is discussed via talks and workshops are held where attenders can learn by practicing. It will be organized for the first time by Boğaziçi University IT Club Compec this year.</p>
+        <h2>Place</h2>
+        <p>
+          Boğaziçi University <br>
+          New Hall 105 <br>
+          BM B4 (For workshops)
+        </p>
+        <h2>Date</h2>
+        <p>17-18 November</p>
+      </div>
+      <div>
+        <h2>For Whom</h2>
+        <p>Boğaziçi DataCamp is designed for you, if</p>
+        <ul>
+          <li>You are a student from the departments like Computer Engineering, Management & Information Systems in which programing concepts and algorithmic approaches are covered, (if you are a professional, still welcome)</li>
+          <li>You desire to make use of "data science" in your projects and career path,</li>
+          <li>You are curious what "data science" implies with the related terms Machine Learning, Artificial Intelligence, Image Recognition, etc.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <section id="program" class="light">
+    <div class="container container-column">
+      <h2>Program</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Event</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="4" class="center-content">Saturday</td>
+            </tr>
+            <tr>
+              <td>12:00 - 13:00</td>
+              <td>Registration</td>
+            </tr>
+            <tr>
+              <td>13:00 - 13:15</td>
+              <td>Event Introduction</td>
+            </tr>
+            <tr>
+              <td>18:00 - 19:00</td>
+              <td>Dinner</td>
+            </tr>
+            <tr>
+              <td rowspan="8" class="center-content">Sunday</td>
+            </tr>
+            <tr>
+              <td>00:00 - 01:30</td>
+              <td>Dinner</td>
+            </tr>
+            <tr>
+              <td>07:30 - 09:00</td>
+              <td>Breakfast</td>
+            </tr>
+            <tr>
+              <td>13:00</td>
+              <td>Deadline for Submissions</td>
+            </tr>
+            <tr>
+              <td>13:00 - 13:30</td>
+              <td>Break</td>
+            </tr>
+            <tr>
+              <td>13:30 - 15:00</td>
+              <td>Team Presentations</td>
+            </tr>
+            <tr>
+              <td>15:00 - 15:30</td>
+              <td>Judging</td>
+            </tr>
+            <tr>
+              <td>15:30 - 16:00</td>
+              <td>Prize Giving Ceremony</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <div class="container container-column">
+      <h2>Partners</h2>
+      <div class="partners-container">
+        <h3>Sponsors</h3>
+        <div class="sponsor main">
+          <a class="sponsor aws" target="_blank" href="https://aws.amazon.com/tr/">
+            <img src="assets/partners/aws.png" alt="">
+          </a>
+          <a class="sponsor insider" target="_blank" href="http://insider.com.tr/">
+            <img src="assets/partners/insider.png" alt="">
+          </a>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
-    
-    <section id="partners">
-        <div class="container">
-            <h2>Partners</h2>
-            <div class="partners-container">
-                <div class="sponsor main">
-                    <h3>Sponsors</h3>
-                    <a target="_blank" href="https://aws.amazon.com/tr/">
-                        <img src="assets/partners/aws.png" alt="">
-                    </a>
-    				<a target="_blank" href="https://useinsider.com/">
-                        <img src="assets/partners/insider.png" alt="">
-                    </a>
-                </div>                                           
-                                
-            </div>
-        </div>
-    </section>
+  <section id="register">
+    <div class="container container-column">
+      <h2>Register</h2>
+      <div class="register-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbxigK9MyCkYgal5PBiBaAcEwRNYtLAowPEGin37R7iTw85g/viewform?embedded=true" width="100%" height="2700px" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor...</iframe>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <div class="container container-wide">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbxigK9MyCkYgal5PBiBaAcEwRNYtLAowPEGin37R7iTw85g/viewform?embedded=true" width="100%" height="2700px" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor...</iframe>
-        </div>
-    </section>
-
-    <section id="register">
-        <div class="container register-container">
-            <h3>Unfortunately, <br class="br-mobile"> registrations are closed.</h3>
-            <p>You can subscribe to our youtube channel to follow <b>live streams</b> of the event:</p>
-            <a target="_blank" href="https://www.youtube.com/channel/UCNo7VY-ZXDgIGF0n2qlH66A">
-                <div class="youtube-btn">
-                    Youtube
-                </div>
-            </a>
+  <!-- <section id="register">
+    <div class="container container-column">
+      <h3>Unfortunately, <br class="br-mobile"> registrations are closed.</h3>
+      <p>You can subscribe to our youtube channel to follow <b>live streams</b> of the event:</p>
+      <a target="_blank" href="https://www.youtube.com/channel/UCNo7VY-ZXDgIGF0n2qlH66A">
+        <div>Youtube</div>
+      </a>
             <p>You can also follow DataCamp's and Compec's instagram pages:</p>
             <div class="instagram">
                 <a target="_blank" href="https://www.instagram.com/boundatacamp/">
-                    <div class="instagram-btn">
+                    <div>
                         @boundatacamp
                     </div>
                 </a>
                 <a target="_blank" href="https://www.instagram.com/bouncompec/">
-                    <div class="instagram-btn">
+                    <div>
                         @bouncompec
                     </div>
                 </a>
             </div>
         </div>
-    </section>
+    </section>-->
     <section id="juries">
         <div class="container container-wide">
             <h3>Juries</h3>
@@ -445,7 +483,7 @@
         <!-- Jüriler-->
     </section>	
     <section id="contact">
-        <div class="container container-wide">
+        <div class="container container-column">
             <h3>Contact Us</h3>
             <div class="team-container clearfix">
                 <!-- <div class="team-member">
@@ -476,7 +514,7 @@
                     </div>
                     <div class="text">
                         <strong>Muhammed Emin Deniz</strong> <br>
-                        <em>Compec R&D Director and Dev-Team Leader</em> <br>
+                        <em>Compec R&D Director</em> <br>
                         <a href="mailto:emindeniz99@gmail.com" target="_top">emindeniz99@gmail.com</a> <br>
                         <a href="tel:+905364433684" target="_top">+90 536 443 36 84</a>
                     </div>
@@ -494,10 +532,10 @@
                 </div>
             </div>
             <h3>CO-11</h3>
-            <iframe class="map-container  " width="100%" height="600vw" sandbox="allow-scripts allow-same-origin"
-										layout="responsive"
-										src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6lBd43pvJ74B2JyvSdsB4xWWdWuBdBFc&q=co+11">
-									</iframe>
+            <iframe class="map-container" width="100%" height="600vw" sandbox="allow-scripts allow-same-origin"
+                                        layout="responsive"
+                                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6lBd43pvJ74B2JyvSdsB4xWWdWuBdBFc&q=co+11">
+                                    </iframe>
             <!-- <div id="map" class="map-container">
 
             </div> -->
@@ -507,7 +545,7 @@
     </section>
 
     <section>
-        <div class="footer-container container">
+        <div class="footer-container">
             <a target="_blank" href="http://compec.org">
                 <img src="assets/compec1white.png" alt="Boğaziçi University IT Club">
             </a>
