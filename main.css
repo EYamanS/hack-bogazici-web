@@ -1,7 +1,7 @@
 /* Simple CSS Reset - START */
 html {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 *, *:before, *:after {
@@ -318,6 +318,10 @@ section h2 {
 }
 
 @media screen and (min-width: 600px){
+  html {
+    font-size: 18px;
+  }
+
   .programs-container{
       width: 600px;
       margin: 0 auto;

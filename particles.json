@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 50,
+      "value": 20,
       "density": {
         "enable": true,
         "value_area": 800
@@ -47,21 +47,21 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 240,
+      "distance": 360,
       "color": "#12295d",
       "opacity": 0.4,
       "width": 2.2
     },
     "move": {
       "enable": true,
-      "speed": 5,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
       "attract": {
         "enable": true,
-        "rotateX": 20,
+        "rotateX": 500,
         "rotateY": 10000
       }
     }
