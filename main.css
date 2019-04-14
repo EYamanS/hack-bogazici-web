@@ -353,15 +353,16 @@ section h2 {
   }
 
   .partners-container .sponsor.aws{
-    width: 300%;
-    padding-top: 25px;
+    width: 150%;
+    margin-top: 25px;
   }
   
   .partners-container .sponsor.insider{
     width: 200%;
-    padding-top: 60px;
     padding-right: 10%;
-    padding-left: 10%;
+    margin-top: 25px;
+    /* padding-left: 10%; */
+    
   }
   .partners-container .sponsor.gold{
       width: 65%;
