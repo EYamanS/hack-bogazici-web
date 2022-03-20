@@ -352,13 +352,13 @@ section h2 {
     margin: 50px 20px;
   }
 
-  .partners-container .sponsor.aws{
-    width: 150%;
-    margin-top: 25px;
+  .partners-container .sponsor.armut{
+    width: 130%;
+    margin-top: 110px;
   }
   
-  .partners-container .sponsor.insider{
-    width: 200%;
+  .partners-container .sponsor.intenseye{
+    width: 170%;
     padding-right: 10%;
     margin-top: 25px;
     /* padding-left: 10%; */
