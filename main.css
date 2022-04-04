@@ -359,7 +359,7 @@ section h2 {
   }
   
   .partners-container .sponsor.coderspace{
-    
+    display: inline;
     width: 70%;
     margin-top: 100px;
     margin-right: 0px;
