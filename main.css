@@ -358,6 +358,13 @@ section h2 {
     margin-right: 0px;
   }
   
+  .partners-container .sponsor.coderspace{
+    
+    width: 70%;
+    margin-top: 100px;
+    margin-right: 0px;
+  }
+
   .partners-container .sponsor.intenseye{
     width: 170%;
     padding-right: 10%;
@@ -365,6 +372,15 @@ section h2 {
     /* padding-left: 10%; */
     
   }
+
+  .partners-container .sponsor.unidisco{
+    width: 80%;
+    padding-right: 75px;
+    margin-top: 25px;
+    /* padding-left: 10%; */
+    
+  }
+
   .partners-container .sponsor.gold{
       width: 65%;
       margin: 20px auto;
