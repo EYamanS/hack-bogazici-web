@@ -448,7 +448,7 @@ section h2 {
 }
 .team-member:after {
   content: '';
-  border-radius: 15px;
+  border-radius: 12px;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -471,7 +471,7 @@ section h2 {
 
 .team-member:hover:after {
   width: 100%;
-  background-color: rgba(255, 68, 8,1);
+  background-color: rgb(164, 173, 226);
   
 	-webkit-transition: all 0.2s ease-in-out;
 	   -moz-transition: all 0.2s ease-in-out;
