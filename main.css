@@ -23,10 +23,18 @@ ol, ul {
   list-style: none;
 }
 
+.faq {
+  font-size: 3.5rem;
+}
+
+.faq-list {
+
+}
+
 hr {
   width: 100%;
-  width: 75%;
-  height: 20px;
+  width: 85%;
+  height: 2px;
   background-color: #183661;
   border: none;
   margin: auto;
@@ -94,6 +102,7 @@ section .container {
 section .container-column {
   display: block;
   text-align: left;
+  padding-bottom: 5%;
 }
 
 section h2 {
@@ -348,11 +357,11 @@ section h2 {
 }
 
 .prize-table p {
-  background-color: rgba(18, 41, 93, 1);
+  
   border-radius: 5px;
   width: fit-content;
   margin: auto;
-  color: #ffffff;
+
   padding: 10px;
   font-style: normal;
   font-weight: 600;
@@ -510,10 +519,10 @@ section h2 {
     width: fit-content;
     padding: 5px;
     border-radius: 5px;
-    font-size: 3.5rem;
-    color: #ffffff;
-    background-color: #183661;
-    box-shadow: 10px 10px #394c66;
+    font-size: 4.5rem;
+
+
+    
   }
 
   #hero .header-image{
