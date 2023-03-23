@@ -1,6 +1,6 @@
 # Hack Bogazici Website
 
-Static website for Hack Bogazici event.
+Personal development branch of hackbogazici.com for Bogazici University IT Club
 
 ## Useful Resources
 
